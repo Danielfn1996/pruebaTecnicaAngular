@@ -1,0 +1,67 @@
+<div class="contaniner">
+  <div>
+    <h2>{{ subtitulo }}</h2>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="mb-3 col-6">
+        <label for="userId" class="form-label">id</label>
+        <input
+          id="id"
+          type="number"
+          name="id"
+          [(ngModel)]="usuario.id"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="userId" class="form-label">User id</label>
+        <input
+          id="userId"
+          type="number"
+          name="userId"
+          [(ngModel)]="usuario.userId"
+          [readonly]="readonly"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mb-3 col-6">
+        <label for="title" class="form-label">Title</label>
+        <input
+          id="title"
+          type="text"
+          name="title"
+          [(ngModel)]="usuario.title"
+          class="form-control"
+          [readonly]="readonly"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="Completed" class="form-label">Completed</label>
+        <input
+          id="completed"
+          type="text"
+          name="completed"
+          [(ngModel)]="usuario.completed"
+          class="form-control"
+          [readonly]="readonly"
+        />
+      </div>
+    </div>
+    <hr />
+    <div class="form-group"></div>
+    <div class="col-6">
+      <button
+        type="submit"
+        id="Guadar"
+        (click)="ConsultarData()"
+        class="btn btn-primary"
+      >
+        Buscar
+      </button>
+    </div>
+  </div>
+</div>
